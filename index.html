@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samip Health Care - A Home of Care, Comfort, and Dignity</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1574056126698-95981d195df1?auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .nav-link {
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #4A90E2;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <a href="#" class="flex items-center py-4">
+                        <span class="playfair font-bold text-2xl text-gray-800">Samip Health Care</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="nav-link text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-blue-600">About</a>
+                    <a href="#services" class="nav-link text-gray-700 hover:text-blue-600">Services</a>
+                    <a href="#gallery" class="nav-link text-gray-700 hover:text-blue-600">Gallery</a>
+                    <a href="#testimonials" class="nav-link text-gray-700 hover:text-blue-600">Testimonials</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600">Contact</a>
+                </div>
+                <button class="md:hidden flex items-center">
+                    <i class="bi bi-list text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero h-screen flex items-center justify-center text-white">
+        <div class="text-center">
+            <h1 class="playfair text-4xl md:text-6xl font-bold mb-4">A Home of Care, Comfort, and Dignity</h1>
+            <p class="text-xl md:text-2xl mb-8">Samip Health Care – Where Every Senior is Family</p>
+            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">
+                Schedule a Visit
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="playfair text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">About Us</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80" alt="Caring Staff" class="rounded-lg shadow-lg">
+                </div>
+                <div>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        At Samip Health Care, we believe in providing a nurturing environment where senior citizens can live with dignity and joy. Our commitment to physical, emotional, and social well-being sets us apart as a premier retirement home in India.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="playfair text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="bi bi-heart-pulse text-4xl text-blue-600"></i>
+                    <h3 class="text-xl font-bold mt-4 mb-2">24/7 Medical Care</h3>
+                    <p class="text-gray-600">Round-the-clock medical supervision by qualified professionals.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="bi bi-hospital text-4xl text-blue-600"></i>
+                    <h3 class="text-xl font-bold mt-4 mb-2">Physiotherapy</h3>
+                    <p class="text-gray-600">Regular sessions to maintain mobility and strength.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="bi bi-cup-hot text-4xl text-blue-600"></i>
+                    <h3 class="text-xl font-bold mt-4 mb-2">Nutritious Meals</h3>
+                    <p class="text-gray-600">Balanced, healthy meals prepared by expert chefs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="playfair text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Our Gallery</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <img src="https://images.unsplash.com/photo-1586105449897-20b5efeb3233?auto=format&fit=crop&q=80" alt="Facility" class="rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <img src="https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?auto=format&fit=crop&q=80" alt="Garden" class="rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80" alt="Activities" class="rounded-lg shadow-md hover:shadow-xl transition duration-300">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="playfair text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">What Families Say</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-600 italic mb-4">"The care and attention provided at Samip Health Care is exceptional. My parents are happy and well-looked after."</p>
+                    <p class="font-bold">- Priya Sharma</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-600 italic mb-4">"We found a second home for our father here. The staff is caring and the facilities are excellent."</p>
+                    <p class="font-bold">- Rahul Mehta</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="playfair text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Contact Us</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-gray-700 mb-2">Name</label>
+                            <input type="text" class="w-full p-3 border rounded-lg" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" class="w-full p-3 border rounded-lg" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Message</label>
+                            <textarea class="w-full p-3 border rounded-lg h-32" required></textarea>
+                        </div>
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                <div>
+                    <div class="mb-6">
+                        <h3 class="text-xl font-bold mb-2">Contact Information</h3>
+                        <p class="text-gray-600">
+                            <i class="bi bi-geo-alt mr-2"></i> 123 Care Street, Mumbai, India<br>
+                            <i class="bi bi-telephone mr-2"></i> +91 123 456 7890<br>
+                            <i class="bi bi-envelope mr-2"></i> info@samiphealthcare.com
+                        </p>
+                    </div>
+                    <div class="bg-gray-200 h-64 rounded-lg">
+                        <!-- Placeholder for map -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>© 2023 Samip Health Care. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('button').addEventListener('click', function() {
+            const nav = document.querySelector('.md\\:flex');
+            nav.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
